@@ -1,6 +1,6 @@
 {
   "name": "@davidgraat/hello.js",
-  "version": "1.0.0",
+  "version": "1.0.1-feature-123.0",
   "description": "Hello World",
   "main": "index.js",
   "repository": {
