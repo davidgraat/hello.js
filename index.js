@@ -1,5 +1,11 @@
-function helloWorld() {
-    console.log("HELLO World!");
+const index = {
+    helloWorld() {
+        console.log("Hello World!");
+    },
+    
+    goodNight() {
+        console.log("Goodnight World!");
+    }
 }
   
-export default helloWorld;
+export default index;
