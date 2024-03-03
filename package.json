@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/david.graat/hello.js.git"
+    "url": "https://github.com/david.graat/hello.js"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
