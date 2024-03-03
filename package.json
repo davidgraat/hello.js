@@ -17,5 +17,14 @@
   "license": "MIT",
   "devDependencies": {
     "semantic-release": "^23.0.2"
+  },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "feature-[0-9]*",
+        "prerelease": true
+      }
+    ]
   }
 }
