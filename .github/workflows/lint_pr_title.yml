@@ -1,0 +1,27 @@
+---
+  name: 'Lint PR Title'
+  on:
+    pull_request:
+      types:
+        - opened
+        - reopened
+        - synchronize 
+        - edited
+  
+  permissions:
+    contents: read 
+  
+  jobs:
+    lint:
+      runs-on: ubuntu-latest
+      steps:     
+        - name: Checkout
+          uses: actions/checkout@v4
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+        - name: Run PR title linting
+          shell: pwsh
+          run: pwsh -File .github\scripts\lint_pr_title.ps1 
+          env:
+            PR_TITLE: ${{ github.event.pull_request.title }}
+...
