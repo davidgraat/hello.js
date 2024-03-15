@@ -1,6 +1,6 @@
 const index = {
     helloWorld() {
-        console.log("Hello World!7");
+        console.log("Hello World!8");
     },
     
     goodNight() {
