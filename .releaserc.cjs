@@ -47,6 +47,7 @@ module.exports = {
 					'types': [
 			                 	{
 			                 		'type': 'feature',
+							"section": "Features"
 			              			'hidden': false
 			            	  	}
 			        	 ]
