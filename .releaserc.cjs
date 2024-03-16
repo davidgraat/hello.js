@@ -39,7 +39,20 @@ module.exports = {
 				"releaseRules": rules
 		  	}
 		],
-		'@semantic-release/release-notes-generator',
+		[
+			'@semantic-release/release-notes-generator',
+			{
+			        'preset': 'conventionalcommits',
+			        'presetConfig': {
+					'types': [
+			                 	{
+			                 		'type': 'feature',
+			              			'hidden': false
+			            	  	}
+			        	 ]
+				}
+			}
+		],
 		"@semantic-release/npm",
 		"@semantic-release/github",
 		] : [
