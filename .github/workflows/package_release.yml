@@ -33,6 +33,8 @@
             node-version: "lts/*"
         - name: Install dependencies
           run: npm clean-install
+        - name: Install conventional-changelog-conventionalcommits
+          run: npm i -D conventional-changelog-conventionalcommits
         - name: Release
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
